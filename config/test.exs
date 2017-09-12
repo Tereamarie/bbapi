@@ -12,8 +12,8 @@ config :logger, level: :warn
 # Configure your database
 config :bb_api, BbApi.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "brianemory",
+  password: "",
   database: "bb_api_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

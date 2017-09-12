@@ -51,8 +51,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :bb_api, BbApi.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "brianemory",
+  password: "",
   database: "bb_api_dev",
   hostname: "localhost",
   pool_size: 10
