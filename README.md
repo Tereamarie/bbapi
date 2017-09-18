@@ -24,7 +24,7 @@ require an API key.
   - Sex
   - Profession
   - Voice by
-  - Episodes (association)
+  - Episodes (has many association)
 
 - Episodes
   - Name
@@ -32,19 +32,19 @@ require an API key.
   - Season
   - Season Episode
   - Series Episode
-  - Characters (association)
-  - Business gag (association)
-  - Pest Control van (association)
-  - Burger specials (association)
+  - Characters (has many association)
+  - Business gag (has one association)
+  - Pest Control van (has one association)
+  - Burger specials (has many association)
 
 - Business gag
   - Name
-  - Episode (association)
+  - Episode (belongs to association)
 
 - Pest control van
   - Name
-  - Episode (association)
+  - Episode (belongs to association)
 
 - Burger special
   - Name
-  - Episode (association)
+  - Episode (belongs to association)
