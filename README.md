@@ -31,7 +31,7 @@ require an API key.
   - Air date
   - Season
   - Season Episode
-  - Total Episode
+  - Series Episode
   - Characters (association)
   - Business gag (association)
   - Pest Control van (association)
