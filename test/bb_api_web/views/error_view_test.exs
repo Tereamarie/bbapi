@@ -14,8 +14,23 @@ defmodule BbApiWeb.ErrorViewTest do
            %{errors: %{detail: "Internal server error"}}
   end
 
-  test "render any other" do
+  test "render any other JSON" do
     assert render(BbApiWeb.ErrorView, "505.json", []) ==
            %{errors: %{detail: "Internal server error"}}
+  end
+
+  test "renders 404.html" do
+    assert render_to_string(BbApiWeb.ErrorView, "404.html", []) ==
+           "Page not found"
+  end
+
+  test "render 500.html" do
+    assert render_to_string(BbApiWeb.ErrorView, "500.html", []) ==
+           "Internal server error"
+  end
+
+  test "render any other HTML" do
+    assert render_to_string(BbApiWeb.ErrorView, "505.html", []) ==
+           "Internal server error"
   end
 end

@@ -13,7 +13,7 @@ config :bb_api,
 config :bb_api, BbApiWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "5+uvkA5F3U2uHqvD0P9QQMhzPpQdrSdyTpHQe/S4fBTkDNKHcL+uOHpRfref5V5z",
-  render_errors: [view: BbApiWeb.ErrorView, accepts: ~w(json)],
+  render_errors: [view: BbApiWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: BbApi.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
