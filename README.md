@@ -24,22 +24,27 @@ require an API key.
   - Sex
   - Profession
   - Voice by
+  - Episodes (association)
 
 - Episodes
   - Name
-  - Characters
-  - Business gag
-  - Pest Control van
-  - Burger specials
+  - Air date
+  - Season
+  - Season Episode
+  - Total Episode
+  - Characters (association)
+  - Business gag (association)
+  - Pest Control van (association)
+  - Burger specials (association)
 
 - Business gag
   - Name
-  - Episode
+  - Episode (association)
 
 - Pest control van
   - Name
-  - Episode
+  - Episode (association)
 
 - Burger special
   - Name
-  - Episode
+  - Episode (association)
