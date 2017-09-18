@@ -12,8 +12,8 @@ config :bb_api,
 # Configures the endpoint
 config :bb_api, BbApiWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "55r3Pgs8sQbVtRZpvh+O/3xQhFQh4J/7bXxEaFCBl+RhRA3KluGUYSKZYf9HurrN",
-  render_errors: [view: BbApiWeb.ErrorView, accepts: ~w(html json)],
+  secret_key_base: "5+uvkA5F3U2uHqvD0P9QQMhzPpQdrSdyTpHQe/S4fBTkDNKHcL+uOHpRfref5V5z",
+  render_errors: [view: BbApiWeb.ErrorView, accepts: ~w(json)],
   pubsub: [name: BbApi.PubSub,
            adapter: Phoenix.PubSub.PG2]
 

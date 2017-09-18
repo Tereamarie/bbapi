@@ -14,8 +14,6 @@ defmodule BbApiWeb.Endpoint do
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
   if code_reloading? do
-    socket "/phoenix/live_reload/socket", Phoenix.LiveReloader.Socket
-    plug Phoenix.LiveReloader
     plug Phoenix.CodeReloader
   end
 
@@ -36,7 +34,7 @@ defmodule BbApiWeb.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_bb_api_key",
-    signing_salt: "AR/7+xWf"
+    signing_salt: "LqtoRkVu"
 
   plug BbApiWeb.Router
 
