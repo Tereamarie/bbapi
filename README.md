@@ -7,8 +7,34 @@ https://swapi.com, I decided to make my API based off Bob's Burgers.
 - [ ] Build homepage
 - [ ] Build about page
 - [ ] Build documentation page
-- [ ] Add people
+- [ ] Add characters
 - [ ] Add opening gag businesses
-- [ ] Add opening gag pest control names
+- [ ] Add opening pest control van names
 - [ ] Add burger specials
 - [ ] Add episode names
+
+## Misc info
+- Characters
+  - Name
+  - Sex
+  - Profession
+  - Voice by
+
+- Episodes
+  - Name
+  - Characters
+  - Business gag
+  - Pest Control van
+  - Burger specials
+
+- Business gag
+  - Name
+  - Episode
+
+- Pest control van
+  - Name
+  - Episode
+
+- Burger special
+  - Name
+  - Episode
