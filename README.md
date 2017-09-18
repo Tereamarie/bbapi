@@ -3,6 +3,11 @@
 I wanted to practice building an API with Phoenix. Inspired by
 https://swapi.com, I decided to make my API based off Bob's Burgers.
 
+## Structure
+There will be GET endpoints to retrieve any of the data. There will also be
+endpoints for creating, editing, and deleting resources. However, these will
+require an API key.
+
 ## Things to do
 - [ ] Build homepage
 - [ ] Build about page
