@@ -22,10 +22,10 @@ defmodule BbApiWeb.Router do
   scope "/api", BbApiWeb do
     pipe_through :api
 
-    resources "/burger_specials", BurgerSpecialController, except: [:new, :edit]
-    resources "/pest_control_vans", PestControlVanController, except: [:new, :edit]
-    resources "/businesses", BusinessController, except: [:new, :edit]
-    resources "/episodes", EpisodeController, except: [:new, :edit]
-    resources "/characters", CharacterController, except: [:new, :edit]
+    resources "/burger_specials", BurgerSpecialController, only: [:index, :show]
+    resources "/pest_control_vans", PestControlVanController, only: [:index, :show]
+    resources "/businesses", BusinessController, only: [:index, :show]
+    resources "/episodes", EpisodeController, only: [:index, :show]
+    resources "/characters", CharacterController, only: [:index, :show]
   end
 end
