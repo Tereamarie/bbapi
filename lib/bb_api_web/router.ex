@@ -26,6 +26,6 @@ defmodule BbApiWeb.Router do
     resources "/pest_control_vans", PestControlVanController, only: [:index, :show]
     resources "/businesses", BusinessController, only: [:index, :show]
     resources "/episodes", EpisodeController, only: [:index, :show]
-    resources "/characters", CharacterController, only: [:index, :show]
+    resources "/characters", CharacterController
   end
 end
