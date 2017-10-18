@@ -1,11 +1,8 @@
-# Script for populating the database. You can run it as:
-#
-#     mix run priv/repo/seeds.exs
-#
-# Inside the script, you can read and write to any of your
-# repositories directly:
-#
-#     BbApi.Repo.insert!(%BbApi.SomeSchema{})
-#
-# We recommend using the bang functions (`insert!`, `update!`
-# and so on) as they will fail if something goes wrong.
+alias BbApi.Repo
+alias BbApi.Characters.Character
+
+Repo.insert!(%Character{name: "Bob Belcher", profession: "Owner", sex: "male", voiced_by: "H. Jon Benjamin"})
+Repo.insert!(%Character{name: "Linda Belcher", profession: "Bookkeeper", sex: "female", voiced_by: "John Roberts"})
+Repo.insert!(%Character{name: "Tina Belcher", profession: "Author", sex: "female", voiced_by: "Dan Mintz"})
+Repo.insert!(%Character{name: "Gene Belcher", profession: "Musician", sex: "male", voiced_by: "Eugene Mirman"})
+Repo.insert!(%Character{name: "Louise Belcher", profession: "", sex: "female", voiced_by: "Kristen Schaal"})
