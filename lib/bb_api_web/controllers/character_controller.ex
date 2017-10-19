@@ -11,8 +11,7 @@ defmodule BbApiWeb.CharacterController do
     render(conn, "index.json", characters: characters)
   end
 
-  def create(conn, %{"name" => name, "profession" => profession, "sex" => sex,
-  "voiced_by" => voiced_by} = params) do
+  def create(conn, params) do
     with {:ok, %Character{} = character} <- Characters.create_character(params) do
       conn
       |> put_status(:created)
@@ -26,9 +25,8 @@ defmodule BbApiWeb.CharacterController do
     render(conn, "show.json", character: character)
   end
 
-  def update(conn, %{"id" => id, "name" => name, "profession" => profession, "sex" => sex,
-  "voiced_by" => voiced_by} = params) do
-    character = Characters.get_character!(id)
+  def update(conn, params) do
+    character = Characters.get_character!(params["id"])
 
     with {:ok, %Character{} = character} <- Characters.update_character(character, params) do
       render(conn, "show.json", character: character)
